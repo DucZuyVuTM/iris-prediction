@@ -52,28 +52,28 @@ export const PredictForm = ({ onSetResults }: PredictFormProps) => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 flex-1">
             <input
-              type="number" step="0.1" placeholder="Sepal Length"
+              type="number" step="0.1" placeholder="Sepal Length" id="sepal_length"
               value={flower.sepal_length}
               onChange={(e) => handleInputChange(index, 'sepal_length', e.target.value)}
               className="border p-2 rounded"
               required
             />
             <input
-              type="number" step="0.1" placeholder="Sepal Width"
+              type="number" step="0.1" placeholder="Sepal Width" id="sepal_width"
               value={flower.sepal_width}
               onChange={(e) => handleInputChange(index, 'sepal_width', e.target.value)}
               className="border p-2 rounded"
               required
             />
             <input
-              type="number" step="0.1" placeholder="Petal Length"
+              type="number" step="0.1" placeholder="Petal Length" id="petal_length"
               value={flower.petal_length}
               onChange={(e) => handleInputChange(index, 'petal_length', e.target.value)}
               className="border p-2 rounded"
               required
             />
             <input
-              type="number" step="0.1" placeholder="Petal Width"
+              type="number" step="0.1" placeholder="Petal Width" id="petal_width"
               value={flower.petal_width}
               onChange={(e) => handleInputChange(index, 'petal_width', e.target.value)}
               className="border p-2 rounded"

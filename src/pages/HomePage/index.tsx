@@ -10,6 +10,7 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-4 border rounded shadow">
           <h3 className="px-4 text-lg font-bold text-center">Enter Iris data to predict</h3>
+          <h4 className="px-4 text-gray-500 text-center">Unit of measurement: cm</h4>
           <PredictForm onSetResults={setResults} />
           {results &&
             <ResultDisplayer results={results} />

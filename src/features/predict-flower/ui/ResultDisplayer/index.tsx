@@ -19,10 +19,10 @@ export const ResultDisplayer = ({ results }: ResultDisplayerProps) => {
       <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 flex-1">
         {results.map((result, index) => (
           <div 
-            key={index} 
-            className="flex flex-wrap items-center gap-2 p-3 border rounded bg-green-50 border-green-200 relative animate-in fade-in duration-300"
+            key={index}
+            className="flex flex-wrap items-baseline gap-x-3 p-3 border rounded bg-green-50 border-green-200 relative animate-in fade-in duration-300 min-w-0"
           >
-            <span className="font-bold mr-2 text-gray-600">
+            <span className="font-bold text-gray-600 break-all">
               #{index + 1}
             </span>
             <span className="text-gray-800">
