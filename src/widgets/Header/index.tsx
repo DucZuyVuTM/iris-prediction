@@ -7,10 +7,10 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo and Web Name */}
           <div
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <img src="/images/logo.png" width={35} height={35}></img>
-            <span className="text-2xl font-bold text-gray-900">MagNews</span>
+            <img src="/images/logo.png" width={40} height={40}></img>
+            <span className="text-2xl font-bold text-gray-900">Iris Prediction</span>
           </div>          
         </div>
       </div>
