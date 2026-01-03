@@ -5,23 +5,27 @@ const Footer: React.FC = () => {
   return (
     <footer className="mx-8 py-6 border-t border-gray-300">
       <div className="container mx-auto px-4 mb-2">
-        <p className="text-center">
-          <FaMobileAlt className="inline mr-1" />
+        <div className="flex flex-col items-center gap-1">
+
+          {/* Phone number */}
           <a
             href="tel:+79057212749"
-            className="text-black hover:underline"
+            className="flex items-center hover:text-blue-600 transition-colors group"
           >
-            8-905-721-27-49
+            <FaMobileAlt className="mr-1 text-lg translate-y-[.5px]" />
+            <span className="group-hover:underline">8-905-721-27-49</span>
           </a>
-          <br />
-          <FaEnvelope className="inline mr-1" />
+
+          {/* Email */}
           <a
             href="mailto:duczuyvu12@gmail.com"
-            className="text-black hover:underline"
+            className="flex items-center hover:text-blue-600 transition-colors group"
           >
-            duczuyvu12@gmail.com
+            <FaEnvelope className="mr-2 text-lg translate-y-[.5px]" />
+            <span className="group-hover:underline">duczuyvu12@gmail.com</span>
           </a>
-        </p>
+
+        </div>
       </div>
     </footer>
   );
